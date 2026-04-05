@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  background: #121827;
+  color: #f8fafc;
+}
+
+.navbar__brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.navbar__nav {
+  display: flex;
+  gap: 18px;
+}
+
+.navbar__nav a {
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar__nav a:hover {
+  color: #7c3aed;
+}
