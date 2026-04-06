@@ -1,12 +1,12 @@
 function About() {
   return (
     <section id="about" className="page-section">
-      <h2>About FUROAN</h2>
-      <p>FUROAN is a company focused on modern web and digital solutions in Sri Lanka.</p>
+      <h2>FUROAN ගැන</h2>
+      <p>FUROAN සමාගම ශ්‍රී ලංකාවේ නවීන වෙබ් හා ඩිජිටල් විසඳුම් සැපයීමක් සඳහා කටයුතු කරයි.</p>
       <ul>
-        <li>Professional business portfolio websites</li>
-        <li>Responsive mobile and desktop experiences</li>
-        <li>Built with React, Vite, JavaScript, and modern CSS</li>
+        <li>මූලික වෙබ් නිර්මාණ සහ ව්‍යාපාරික portfolio</li>
+        <li>Mobile සහ desktop friendly වෙබ් අඩවි</li>
+        <li>React, Vite, JavaScript, CSS යන තාක්ෂණ භාවිතය</li>
       </ul>
     </section>
   )

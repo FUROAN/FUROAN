@@ -3,7 +3,7 @@ import './Footer.css'
 function Footer() {
   return (
     <footer className="footer">
-      <p>© 2026 FUROAN. We deliver web design and portfolio services.</p>
+      <p>© 2026 FUROAN. අපි වෙබ් නිර්මාණ හා portfolio සේවාවන් ලබා දෙමු.</p>
     </footer>
   )
 }
