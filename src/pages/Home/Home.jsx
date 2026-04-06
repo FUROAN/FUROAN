@@ -1,12 +1,12 @@
 function Home() {
   return (
     <section id="home" className="page-section">
-      <h1>FUROAN - අපේ සමාගමේ Portfolio</h1>
-      <p>FUROAN වෙබ් අඩවියට සාදරයෙන් පිළිගනිමු. මෙය අපගේ ව්‍යාපාරික portfolio එකයි.</p>
+      <h1>FUROAN - Company Portfolio</h1>
+      <p>Welcome to FUROAN. This is our business portfolio site for company services and projects.</p>
       <p>
-        අපි <span className="highlight">වෙබ් නිර්මාණ, UI/UX සැලසුම්,</span> සහ <span className="highlight">React වෙබ් සැලසුම්</span> කටයුතු කරමු.
+        We build <span className="highlight">modern websites, UI/UX designs,</span> and <span className="highlight">React-based web applications</span>.
       </p>
-      <a className="button" href="#about">අප ගැන වැඩිදුර</a>
+      <a className="button" href="#about">Learn more</a>
     </section>
   )
 }

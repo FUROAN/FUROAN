@@ -2,6 +2,16 @@
   color-scheme: dark;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #020617;
+}
+
 .app {
   min-height: 100vh;
   display: flex;
@@ -20,7 +30,7 @@
 
 .page-section {
   position: relative;
-  background: rgba(7, 18, 46, 0.92);
+  background: rgba(7, 18, 46, 0.94);
   border: 1px solid rgba(56, 189, 248, 0.18);
   border-radius: 28px;
   padding: 32px 32px 28px;
@@ -115,4 +125,29 @@
 .footer p {
   margin: 0;
   font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .app__content {
+    padding: 20px 16px 32px;
+  }
+
+  .page-section {
+    padding: 28px 22px 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-section {
+    margin-bottom: 18px;
+    border-radius: 22px;
+  }
+
+  .page-section h1 {
+    font-size: 2.4rem;
+  }
+
+  .page-section h2 {
+    font-size: 1.55rem;
+  }
 }
