@@ -29,6 +29,7 @@
   backdrop-filter: blur(18px);
   overflow: hidden;
   color: #f8fafc;
+  scroll-margin-top: 100px;
 }
 
 .page-section::before {

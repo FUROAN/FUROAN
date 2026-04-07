@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer.jsx'
 import Home from './pages/Home/Home.jsx'
 import About from './pages/About/About.jsx'
 import ListAbout from './pages/ListAbout.jsx'
+import Contact from './pages/Contact.jsx'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Home />
         <About />
         <ListAbout />
+        <Contact />
       </main>
       <Footer />
     </div>
