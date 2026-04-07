@@ -5,7 +5,7 @@
   right: 0;
   z-index: 20;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 30px;
   display: flex;
   justify-content: center;
   pointer-events: none;
@@ -13,13 +13,13 @@
 
 .navbar__inner {
   pointer-events: auto;
-  width: min(1200px, 100%);
+  width: min(1500px, 100%);
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.1rem;
-  padding: 14px 20px;
+  gap: 2.4rem;
+  padding: 14px 28px;
   border-radius: 999px;
   background: linear-gradient(135deg, rgba(6, 10, 20, 0.98), rgba(18, 22, 30, 0.96), rgba(14, 14, 16, 0.98));
   border: 1px solid rgba(255, 255, 255, 0.08);
