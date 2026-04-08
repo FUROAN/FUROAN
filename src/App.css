@@ -14,7 +14,7 @@
 .app__content {
   width: min(1120px, 100%);
   margin: 0 auto;
-  padding: 24px 20px 40px;
+  padding: 0 20px 40px;
   flex: 1;
 }
 
@@ -39,6 +39,110 @@
   background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.22), transparent 26%),
     radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.16), transparent 22%);
   pointer-events: none;
+}
+
+.home-section {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 32px 32px;
+  margin-top: -90px;
+  margin-bottom: 0;
+  border-radius: 0;
+  max-width: none;
+}
+
+.home-section__hero {
+  max-width: 860px;
+  width: min(100%, 1000px);
+  text-align: center;
+}
+
+.home-section__brand {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.home-section__logo {
+  display: flex;
+  gap: 0.85rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-section__dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.home-section__dot--green {
+  background: #22c55e;
+}
+
+.home-section__dot--purple {
+  background: #8b5cf6;
+}
+
+.home-section__dot--red {
+  background: #ef4444;
+}
+
+.home-section__title {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 0.85rem;
+  margin: 0;
+  font-size: clamp(4rem, 8vw, 7.5rem);
+  line-height: 0.95;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.home-section__letter {
+  display: inline-flex;
+  font-weight: 900;
+}
+
+.home-section__letter--blue {
+  color: #38bdf8;
+}
+
+.home-section__letter--white {
+  color: #f8fafc;
+}
+
+.home-section__letter--red {
+  color: #ef4444;
+}
+
+.home-section__subtitle {
+  margin: 0 auto;
+  color: #a5f3fc;
+  font-size: clamp(1.1rem, 1.6vw, 1.5rem);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.home-section__tagline {
+  margin: 1rem auto 0;
+  color: #dbeafe;
+  font-size: clamp(1.3rem, 2vw, 2rem);
+  line-height: 1.2;
 }
 
 .page-section h1,
