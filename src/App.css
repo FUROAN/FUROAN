@@ -63,6 +63,7 @@
 .home-section__content {
   max-width: 760px;
   text-align: center;
+  transform: translateX(-170px);
 }
 
 .home-section__eyebrow {
@@ -83,6 +84,33 @@
   margin: 0;
   font-size: clamp(3rem, 5vw, 5rem);
   line-height: 1.02;
+}
+
+.home-section__headline-main,
+.home-section__headline-subline {
+  display: block;
+  white-space: nowrap;
+}
+
+.home-section__headline-main {
+  color: #f87171;
+}
+
+.home-section__logo-word {
+  display: inline-flex;
+  gap: 0.1ch;
+}
+
+.home-section__logo-letter {
+  display: inline-block;
+}
+
+.home-section__logo-letter--f {
+  color: #3b82f6;
+}
+
+.home-section__logo-letter--r {
+  color: #f87171;
 }
 
 .home-section p {
@@ -109,15 +137,17 @@
   width: min(1120px, 100%);
   margin: 0 auto;
   align-items: center;
+  transform: translateY(-50px);
 }
 
 .home-section__globe {
   position: relative;
   width: 100%;
   aspect-ratio: 1 / 1;
-  background: #000;
+  background: transparent;
   border-radius: 32px;
   overflow: hidden;
+  transform: translateX(230px);
 }
 
 .marker-labels {

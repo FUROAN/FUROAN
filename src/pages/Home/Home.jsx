@@ -58,17 +58,18 @@ function Home() {
     <section id="home" className="page-section home-section">
       <div className="home-section__hero">
         <div className="home-section__content home-section__copy">
-          <p className="home-section__eyebrow">FUROAN — full screen home section</p>
-          <h1>Crafting modern web experiences for ambitious businesses.</h1>
+         
+          <h1>
+            <span className="home-section__headline-main">Your Success, Your Future,</span>
+            <span className="home-section__headline-subline">
+              Powered by <span className="home-section__logo-word"><span className="home-section__logo-letter home-section__logo-letter--f">F</span>UO<span className="home-section__logo-letter home-section__logo-letter--r">R</span>AN</span> Technology.
+            </span>
+          </h1>
           <p>
             We build stunning React websites, polished UI/UX systems, and memorable digital portfolios
             that help your brand stand out and convert visitors into customers.
           </p>
-          <div className="home-section__actions">
-            <a className="button" href="#about">Explore Our Work</a>
-            <a className="button button--secondary" href="#contact">Contact Us</a>
-            <a className="button" href="#our-services">View Services</a>
-          </div>
+         
         </div>
           <div className="home-section__globe">
           <canvas ref={canvasRef} className="home-section__canvas" width="600" height="600" />
