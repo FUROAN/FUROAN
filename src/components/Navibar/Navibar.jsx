@@ -20,8 +20,7 @@ function Navibar() {
         </div>
         <nav className="navbar__nav" aria-label="Primary navigation">
           <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#our-services">Services</a>
+          <a href="#our-services">Our Services</a>
           <a href="#contact">Contact</a>
         </nav>
         <a className="navbar__cta" href="#contact">Let&apos;s Talk</a>

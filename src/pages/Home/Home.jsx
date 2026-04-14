@@ -60,30 +60,28 @@ function Home() {
         <div className="home-section__content home-section__copy">
          
           <h1>
-            <span className="home-section__headline-main">Your Success, Your Future,</span>
-            <span className="home-section__headline-subline">Powered by FUORAN Technology.</span>
+            <span className="home-section__headline-main">
+              Your <span className="home-section__headline-accent">Success</span>, Your <span className="home-section__headline-accent">Future</span>,
+            </span>
+            <span className="home-section__headline-subline">
+              Powered by <span className="home-section__brand-word"><span className="home-section__brand-letter--f">F</span>UO<span className="home-section__brand-letter--r">R</span><span className="home-section__brand-letter--an">AN</span></span> Technology.
+            </span>
           </h1>
-          <p>
-            We build stunning React websites, polished UI/UX systems, and memorable digital portfolios
-            that help your brand stand out and convert visitors into customers.
+          <p className="home-section__intro-box">
+            Your Vision, Our Tech. We collaborate with you to design and build superior software solutions that define the future.
+            <br />
+            Let’s join forces to create impactful digital experiences
+            <br />
+            where your ideas meet our innovative technology.
           </p>
          
         </div>
           <div className="home-section__globe">
           <canvas ref={canvasRef} className="home-section__canvas" width="600" height="600" />
           <div className="marker-labels">
-            <div className="marker-label" style={{ positionAnchor: '--cobe-sf', opacity: 'var(--cobe-visible-sf, 0)' }}>
-              SFO
-            </div>
-            <div className="marker-label" style={{ positionAnchor: '--cobe-iad', opacity: 'var(--cobe-visible-iad, 0)' }}>
-              IAD
-            </div>
-            <div className="marker-label" style={{ positionAnchor: '--cobe-arn', opacity: 'var(--cobe-visible-arn, 0)' }}>
-              ARN
-            </div>
-            <div className="marker-label" style={{ positionAnchor: '--cobe-gru', opacity: 'var(--cobe-visible-gru, 0)' }}>
-              GRU
-            </div>
+           
+            
+          
           </div>
         </div>
       </div>
