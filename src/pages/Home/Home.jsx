@@ -61,9 +61,7 @@ function Home() {
          
           <h1>
             <span className="home-section__headline-main">Your Success, Your Future,</span>
-            <span className="home-section__headline-subline">
-              Powered by <span className="home-section__logo-word"><span className="home-section__logo-letter home-section__logo-letter--f">F</span>UO<span className="home-section__logo-letter home-section__logo-letter--r">R</span>AN</span> Technology.
-            </span>
+            <span className="home-section__headline-subline">Powered by FUORAN Technology.</span>
           </h1>
           <p>
             We build stunning React websites, polished UI/UX systems, and memorable digital portfolios

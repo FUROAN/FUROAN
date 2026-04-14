@@ -63,7 +63,7 @@
 .home-section__content {
   max-width: 760px;
   text-align: center;
-  transform: translateX(-170px);
+  transform: translateX(-150px);
 }
 
 .home-section__eyebrow {
@@ -90,27 +90,6 @@
 .home-section__headline-subline {
   display: block;
   white-space: nowrap;
-}
-
-.home-section__headline-main {
-  color: #f87171;
-}
-
-.home-section__logo-word {
-  display: inline-flex;
-  gap: 0.1ch;
-}
-
-.home-section__logo-letter {
-  display: inline-block;
-}
-
-.home-section__logo-letter--f {
-  color: #3b82f6;
-}
-
-.home-section__logo-letter--r {
-  color: #f87171;
 }
 
 .home-section p {
