@@ -93,7 +93,7 @@ const serviceTabs = [
     title: 'SEO and AEO',
     updated: 'April',
     description: 'Optimization services to strengthen search and answer-engine visibility.',
-    details: ['Price: 250,000 LKR'],
+    details: ['Price: 250,0 LKR'],
     addons: [],
   },
 ]
