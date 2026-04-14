@@ -20,7 +20,51 @@ function Navibar() {
         </div>
         <nav className="navbar__nav" aria-label="Primary navigation">
           <a href="#home">Home</a>
-          <a href="#our-services">Our Services</a>
+          <div className="navbar__dropdown">
+            <a href="#our-services" className="navbar__dropdown-toggle">
+              Our Services <span className="navbar__dropdown-chevron">▾</span>
+            </a>
+            <div className="navbar__dropdown-menu" role="menu" aria-label="Our service links">
+              <a href="#our-services" className="navbar__dropdown-link" role="menuitem">
+                <span className="navbar__dropdown-icon">💻</span>
+                Web Design
+              </a>
+              <a href="#our-services" className="navbar__dropdown-link" role="menuitem">
+                <span className="navbar__dropdown-icon">📱</span>
+                Mobile App
+              </a>
+              <a href="#our-services" className="navbar__dropdown-link" role="menuitem">
+                <span className="navbar__dropdown-icon">🛒</span>
+                E-Commerce
+              </a>
+              <a href="#our-services" className="navbar__dropdown-link" role="menuitem">
+                <span className="navbar__dropdown-icon">📦</span>
+                Inventory Management
+              </a>
+              <a href="#our-services" className="navbar__dropdown-link" role="menuitem">
+                <span className="navbar__dropdown-icon">💳</span>
+                POS System
+              </a>
+              <a href="#our-services" className="navbar__dropdown-link" role="menuitem">
+                <span className="navbar__dropdown-icon">🎥</span>
+                AI Video
+              </a>
+              <a href="#our-services" className="navbar__dropdown-link" role="menuitem">
+                <span className="navbar__dropdown-icon">🔍</span>
+                SEO & AEO
+              </a>
+              <a href="#our-services" className="navbar__dropdown-link" role="menuitem">
+                <span className="navbar__dropdown-icon">📣</span>
+                Social Media Marketing & Video
+              </a>
+              <a href="#our-services" className="navbar__dropdown-link" role="menuitem">
+                <span className="navbar__dropdown-icon">🤖</span>
+                Chat Bot
+              </a>
+            </div>
+          </div>
+          <a href="#our-project">Our Project</a>
+          <a href="#about">About Us</a>
           <a href="#contact">Contact</a>
         </nav>
         <a className="navbar__cta" href="#contact">Let&apos;s Talk</a>

@@ -193,7 +193,7 @@
 }
 
 .our-services-section__card-box span::before {
-  content: 'Premium';
+  content: 'New Package';
   position: absolute;
   width: 150%;
   height: 40px;
@@ -403,28 +403,133 @@
   display: block;
 }
 
-@media (max-width: 860px) {
-  .home-section__hero {
-    grid-template-columns: 1fr;
-  }
-
-  .home-section__globe-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 .button--secondary {
   background: rgba(255, 255, 255, 0.08);
 }
 
+@media (max-width: 1024px) {
+  .our-services-section__card-container {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 1.75rem;
+    padding: 0 32px;
+    transform: none;
+  }
+
+  .our-services-section__card-box {
+    width: 100%;
+    min-height: 680px;
+  }
+
+  .our-services-section__card-copy {
+    bottom: 12rem;
+  }
+
+  .our-services-section__card-promo {
+    left: 1.25rem;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    padding: 0.7rem 0.85rem;
+  }
+
+  .home-section__intro-box {
+    margin: 1.5rem auto 0;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    padding: 1.75rem;
+  }
+
+  .home-section__hero {
+    gap: 1.5rem;
+    transform: none;
+  }
+
+  .home-section__globe {
+    transform: none;
+  }
+}
+
 @media (max-width: 860px) {
+  .app__content {
+    padding: 0 14px 22px;
+  }
+
+  .home-section {
+    padding: 70px 18px 24px;
+    min-height: auto;
+  }
+
   .home-section__hero {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 1.5rem;
+  }
+
+  .home-section__content {
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .home-section__globe {
+    transform: none;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
   }
 
   .home-section__copy {
     align-items: center;
+  }
+
+  .home-section__headline-main,
+  .home-section__headline-subline {
+    white-space: normal;
+  }
+
+  .home-section__intro-box {
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 1.75rem 1.5rem;
+  }
+
+  .our-services-section {
+    padding: 80px 16px 26px;
+  }
+
+  .our-services-section__card-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 14px;
+    gap: 1.5rem;
+    transform: none;
+    margin: 1.5rem auto;
+    justify-items: stretch;
+  }
+
+  .our-services-section__card-box {
+    width: 100%;
+    min-height: 700px;
+    border-radius: 24px;
+  }
+
+  .our-services-section__card-copy {
+    top: 4rem;
+    bottom: 12.5rem;
+  }
+
+  .our-services-section__card-promo {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.7rem 0.8rem;
+  }
+
+  .page-section {
+    padding: 24px 16px 24px;
+    border-radius: 24px;
   }
 }
 
