@@ -133,6 +133,17 @@
   color: #ffffff;
 }
 
+.footer__copyright {
+  width: min(1260px, 100%);
+  margin: 2.25rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(248, 248, 248, 0.75);
+  letter-spacing: 0.02em;
+}
+
 @media (max-width: 900px) {
   .footer__inner {
     flex-direction: column;
@@ -155,5 +166,9 @@
 
   .footer__links {
     grid-template-columns: 1fr;
+  }
+
+  .footer__copyright {
+    margin-top: 1.8rem;
   }
 }

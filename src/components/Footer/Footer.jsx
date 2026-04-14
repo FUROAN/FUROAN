@@ -55,6 +55,8 @@ function Footer() {
           </div>
         </div>
       </div>
+
+      <p className="footer__copyright"> © 2026 FUROAN. All rights reserved.</p>
     </footer>
   )
 }
