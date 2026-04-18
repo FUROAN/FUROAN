@@ -56,6 +56,9 @@
   margin-top: 0;
   margin-bottom: 0;
   border-radius: 0;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
   max-width: none;
   background: rgba(0, 0, 0, 0.95);
   transform: translateY(-85px);
@@ -76,9 +79,17 @@
   margin-top: 0;
   margin-bottom: 0;
   border-radius: 0;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
   max-width: none;
   background: rgba(0, 0, 0, 0.95);
-  transform: translateY(-90px);
+  transform: translateY(-85px);
+}
+
+.home-section::before,
+.our-services-section::before {
+  display: none;
 }
 
 .our-services-section__content {
@@ -789,31 +800,37 @@
 
 /* About Section Styles with Home Background */
 .about-section {
-  padding: 120px 40px;
-  min-height: 600px;
-  background: linear-gradient(135deg, rgba(31, 31, 31, 0.95) 0%, rgba(20, 20, 20, 0.95) 100%);
   position: relative;
-  overflow: hidden;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 32px 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
+  max-width: none;
+  background: rgba(0, 0, 0, 0.95);
+  transform: translateY(-85px);
 }
 
 .about-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 50%);
-  pointer-events: none;
+  display: none;
 }
 
 .about-section__content {
-  max-width: 1200px;
+  max-width: 1140px;
+  width: 100%;
   margin: 0 auto;
-  position: relative;
-  z-index: 1;
+  text-align: center;
 }
 
 .about-section h2 {
@@ -839,4 +856,46 @@
   line-height: 1.8;
   max-width: 900px;
   margin: 0 auto 2rem;
+}
+
+.contact-section {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 32px 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
+  max-width: none;
+  background: rgba(0, 0, 0, 0.95);
+  transform: translateY(-85px);
+}
+
+.contact-section::before {
+  display: none;
+}
+
+.contact-section__content {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .about-section,
+  .contact-section {
+    padding: 80px 16px 26px;
+    min-height: auto;
+  }
 }
