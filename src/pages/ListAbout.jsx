@@ -49,7 +49,7 @@ function ListAbout() {
                 <path d="M6 8H18V10H6V8ZM6 12H18V14H6V12ZM6 16H14V18H6V16Z" fill="white"/>
               </svg>
             </div>
-            <div className="our-services-section__card-title">Inventory Management</div>
+            <div className="our-services-section__card-title">Inventory  Management</div>
             <div className="our-services-section__card-description">
               Real-time inventory tracking, automated reordering, and comprehensive stock management solutions.
             </div>
