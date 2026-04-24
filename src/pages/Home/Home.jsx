@@ -1,8 +1,12 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import createGlobe from 'cobe'
+import AboutUs from './AboutUs'
 
 function Home() {
   const canvasRef = useRef(null)
+  const servicesSectionRef = useRef(null)
+  const [isLoaded, setIsLoaded] = useState(false)
+  const [servicesInView, setServicesInView] = useState(false)
 
   useEffect(() => {
     if (!canvasRef.current) return
@@ -54,9 +58,39 @@ function Home() {
     }
   }, [])
 
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => setIsLoaded(true))
+    return () => cancelAnimationFrame(frame)
+  }, [])
+
+  useEffect(() => {
+    const node = servicesSectionRef.current
+    if (!node) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          setServicesInView(true)
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.2 }
+    )
+
+    observer.observe(node)
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <>
-      <section id="home" className="page-section home-section">
+      <section id="home" className={`page-section home-section${isLoaded ? ' is-loaded' : ''}`}>
+      <div className="home-section__video-background">
+        <img
+          className="home-section__video"
+          src="/src/assets/1a3593f6-2f39-460f-942b-57553984fb19.png"
+          alt="Background"
+        />
+      </div>
       <div className="home-section__hero">
         <div className="home-section__content home-section__copy">
          
@@ -69,11 +103,15 @@ function Home() {
             </span>
           </h1>
           <p className="home-section__intro-box">
-            Your Vision, Our Tech. We collaborate with you to design and build superior software solutions that define the future.
-            <br />
-            Let’s join forces to create impactful digital experiences
-            <br />
-            where your ideas meet our innovative technology.
+            <span className="home-section__intro-line">
+              Your Vision, Our Tech. We collaborate with you to design and build superior software solutions that define the future.
+            </span>
+            <span className="home-section__intro-line">
+              Let’s join forces to create impactful digital experiences
+            </span>
+            <span className="home-section__intro-line">
+              where your ideas meet our innovative technology.
+            </span>
           </p>
          
         </div>
@@ -87,7 +125,11 @@ function Home() {
         </div>
       </div>
     </section>
-    <section id="our-services" className="page-section our-services-section">
+    <section
+      id="our-services"
+      ref={servicesSectionRef}
+      className={`page-section our-services-section${servicesInView ? ' is-inview' : ''}`}
+    >
       <div className="our-services-section__content">
         <h2 className="our-services-section__title">Our Services</h2>
         <div className="our-services-section__card-container">
@@ -208,6 +250,7 @@ function Home() {
         
       </div>
     </section>
+    <AboutUs />
   </>
   )
 }
