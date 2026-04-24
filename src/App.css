@@ -48,11 +48,11 @@
   width: 100vw;
   margin-left: -50vw;
   margin-right: -50vw;
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 32px 32px;
+  padding: 80px 32px 32px;
   margin-top: 0;
   margin-bottom: 0;
   border-radius: 0;
@@ -71,11 +71,11 @@
   width: 100vw;
   margin-left: -50vw;
   margin-right: -50vw;
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 32px 32px;
+  padding: 80px 32px 32px;
   margin-top: 0;
   margin-bottom: 0;
   border-radius: 0;
@@ -84,7 +84,7 @@
   backdrop-filter: none;
   max-width: none;
   background: rgba(0, 0, 0, 0.95);
-  transform: translateY(-85px);
+  transform: translateY(-100px);
 }
 
 .home-section::before,
@@ -97,6 +97,13 @@
   width: 100%;
   text-align: center;
   margin: 0 auto;
+}
+
+.our-services-section__title {
+  display: block;
+  transform: none;
+  text-align: center;
+  margin: 0 auto 2rem;
 }
 
 .our-services-section__card-promo {
@@ -190,18 +197,18 @@
 
 .our-services-section__card-container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(400px, 1fr));
+  grid-template-columns: repeat(3, minmax(410px, 1fr));
   justify-items: center;
-  gap: 30px;
+  gap: 40px;
   margin: 2rem auto;
   width: 100%;
   max-width: 1300px;
   padding: 0 40px;
-  transform: translateX(-80px);
+  transform: translateX(-110px);
 }
 
 .our-services-section__card-box {
-  width: 400px;
+  width: 410px;
   height: 220px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.08);
@@ -548,7 +555,7 @@
   grid-template-columns: minmax(320px, 1fr) minmax(320px, 620px);
   gap: 2rem;
   width: min(1120px, 100%);
-  margin: 0 auto;
+  margin: 120px auto 0;
   align-items: center;
   transform: translateY(0);
 }
