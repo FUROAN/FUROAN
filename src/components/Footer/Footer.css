@@ -5,11 +5,22 @@
   margin-left: -50vw;
   margin-right: -50vw;
   width: 100vw;
-  padding: 60px 24px 40px;
-  background: linear-gradient(135deg, rgba(6, 10, 20, 0.98), rgba(18, 22, 30, 0.96), rgba(14, 14, 16, 0.98));
+  padding: 80px 32px 48px;
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 18%),
+    linear-gradient(180deg, #03070f 0%, #07111e 45%, #050812 100%);
   color: #f8fafc;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.03);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.03), 0 -20px 60px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.05), transparent 20%),
+    radial-gradient(circle at bottom left, rgba(59, 130, 246, 0.08), transparent 22%);
+  pointer-events: none;
 }
 
 .footer__inner {
@@ -25,20 +36,21 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  min-width: 180px;
+  min-width: 200px;
 }
 
 .footer__logo {
   display: flex;
-  gap: 0.6rem;
+  gap: 0.7rem;
   align-items: center;
 }
 
 .footer__dot {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border-radius: 999px;
   display: inline-block;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.04);
 }
 
 .footer__dot--green {
@@ -98,7 +110,7 @@
 
 .footer__links {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
   flex: 1;
 }
@@ -118,19 +130,22 @@
   margin: 0;
   color: #f8fafc;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .footer__column a {
-  color: rgba(248, 248, 248, 0.82);
+  color: rgba(248, 248, 248, 0.78);
   text-decoration: none;
   font-size: 0.95rem;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .footer__column a:hover,
 .footer__column a:focus-visible {
-  color: #ffffff;
+  color: #38bdf8;
+  transform: translateX(4px);
 }
 
 .footer__copyright {
@@ -140,7 +155,7 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   font-size: 0.9rem;
-  color: rgba(248, 248, 248, 0.75);
+  color: rgba(248, 248, 248, 0.72);
   letter-spacing: 0.02em;
 }
 
