@@ -46,12 +46,16 @@ function AboutUs() {
         <h2 className="about-us-section__title">About Us</h2>
         <div className="about-us-section__description">
           <p>
-            We are FUROAN Technology, a forward-thinking software development company dedicated to turning your vision into reality. 
-            Our team of passionate developers and designers works collaboratively to deliver innovative digital solutions that drive success.
+            Welcome to FUORAN, a dynamic software solutions provider dedicated to bridging the gap between complex technology and impactful business results. We specialize in high-performance Web and Mobile Application Development, ensuring your digital tools are powerful, scalable, and intuitive.
           </p>
           <p>
-            With expertise across web, mobile, AI, and emerging technologies, we empower businesses to thrive in the digital age. 
-            Your success is our mission, and we're committed to excellence in every project we undertake.
+            By integrating advanced technologies like AI Video Production, Chatbots, and AI-enhanced SEO, we help your brand achieve superior visibility and efficiency in a competitive market.
+          </p>
+          <p>
+            At FUORAN, we go beyond standard development to offer comprehensive business solutions, including E-commerce, Inventory Management, and POS Systems. Combined with our strategic Social Media Marketing, we empower businesses to grow and adapt in a fast-paced digital landscape.
+          </p>
+          <p>
+            FUORAN is your dedicated partner for best-in-class, tailored IT solutions.
           </p>
         </div>
       </div>
