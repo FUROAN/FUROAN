@@ -251,6 +251,27 @@ function Home() {
       </div>
     </section>
     <AboutUs />
+    <section id="our-project" className="page-section our-project-section">
+      
+      <div className="our-project-section__content">
+        <h2 className="our-project-section__title">Our Project</h2>
+        
+        <div className="our-project-section__grid">
+          <div className="our-project-section__card">
+            <h3>Web Platform Development</h3>
+            <p>Custom web applications with modern UI, fast performance, and secure architectures.</p>
+          </div>
+          <div className="our-project-section__card">
+            <h3>Mobile Experience</h3>
+            <p>Native and cross-platform mobile apps built for seamless user engagement.</p>
+          </div>
+          <div className="our-project-section__card">
+            <h3>AI & Business Systems</h3>
+            <p>AI-enabled automation, inventory systems, POS, and smart analytics for growing businesses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </>
   )
 }
