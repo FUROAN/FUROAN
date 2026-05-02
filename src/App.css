@@ -1186,18 +1186,41 @@
   line-height: 1.8;
 }
 
-.our-project-section__grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+.our-project-section__slider {
+  overflow: hidden;
+  width: 1550px;
+  padding: 0 100px;
+  margin-left: -200px;
+}
+
+.our-project-section__track {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+  padding: 40px 0;
+  min-height: 370px;
+  width: calc(100vw - 80px);
+  margin: 0 auto;
+  animation: projectScroll 50s linear infinite;
 }
 
 .our-project-section__card {
+  flex: 0 0 calc((100% - 60px) / 2.8);
+  min-width: calc((100% - 50px) / 2.8);
   background: rgba(15, 23, 42, 0.9);
   border: 1px solid rgba(148, 163, 184, 0.12);
   border-radius: 24px;
-  padding: 28px;
-  min-height: 220px;
+  padding: 38px;
+  min-height: 260px;
+}
+
+@keyframes projectScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-166.6667% - 100px));
+  }
 }
 
 .our-project-section__card h3 {
