@@ -2,7 +2,7 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="animated-footer">
       <div className="footer__inner">
         <div className="footer__brand">
           <div className="footer__logo">
