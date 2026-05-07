@@ -258,7 +258,7 @@ function Home() {
         <div className="our-project-section__slider">
           <div className="our-project-section__track">
             <div className="our-project-section__card">
-              <h3>Web Platform Development</h3>
+              <h3>Web Platform  Development</h3>
               <p>Custom web applications with modern UI, fast performance, and secure architectures.</p>
             </div>
             <div className="our-project-section__card">
