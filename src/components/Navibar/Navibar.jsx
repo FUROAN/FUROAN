@@ -64,8 +64,7 @@ function Navibar() {
             </div>
           </div>
           <a href="#our-project">Our Project</a>
-          <a href="#about">About Us</a>
-          <a href="#contact">Contact</a>
+          <a href="#about-us">About Us</a>
         </nav>
         <a className="navbar__cta" href="#contact">Let&apos;s Talk</a>
       </div>
