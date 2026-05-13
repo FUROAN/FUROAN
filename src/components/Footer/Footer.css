@@ -8,10 +8,9 @@
   padding: 52px 32px 40px;
   margin-top: 0;
   background-color: #000000;
-  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.14), transparent 18%),
-    linear-gradient(180deg, #000000 0%, #000000 45%, #000000 100%);
+  background: #000000;
   color: #f8fafc;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: none;
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.03), 0 -20px 60px rgba(0, 0, 0, 0.35);
   overflow: hidden;
   animation: footerGlow 20s ease-in-out infinite;
