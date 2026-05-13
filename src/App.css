@@ -14,7 +14,7 @@
 .app__content {
   width: min(1120px, 100%);
   margin: 0 auto;
-  padding: 0 20px 40px;
+  padding: 0 20px 0;
   flex: 1;
 }
 
@@ -1339,7 +1339,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 32px 32px;
+  padding: 80px 32px 0;
   margin-top: -50px;
   margin-bottom: 0;
   border-radius: 0;
@@ -1347,7 +1347,8 @@
   box-shadow: none;
   backdrop-filter: none;
   max-width: none;
-  background: rgba(0, 0, 0, 0.95);
+  background-color: #000000;
+  background: linear-gradient(180deg, #000000 0%, #000000 100%);
   transform: translateY(-35px);
 }
 
