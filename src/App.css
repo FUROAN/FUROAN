@@ -1191,6 +1191,58 @@
   width: 1550px;
   padding: 0 100px;
   margin-left: -200px;
+  position: relative;
+  isolation: isolate;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.5) 6%,
+    #000 14%,
+    #000 86%,
+    rgba(0, 0, 0, 0.5) 94%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.5) 6%,
+    #000 14%,
+    #000 86%,
+    rgba(0, 0, 0, 0.5) 94%,
+    transparent 100%
+  );
+}
+
+.our-project-section__slider::before,
+.our-project-section__slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: clamp(56px, 7vw, 120px);
+  z-index: 2;
+  pointer-events: none;
+  backdrop-filter: blur(2px);
+}
+
+.our-project-section__slider::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(8, 31, 66, 0.95) 0%,
+    rgba(8, 31, 66, 0.58) 45%,
+    rgba(8, 31, 66, 0) 100%
+  );
+}
+
+.our-project-section__slider::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(8, 31, 66, 0.95) 0%,
+    rgba(8, 31, 66, 0.58) 45%,
+    rgba(8, 31, 66, 0) 100%
+  );
 }
 
 .our-project-section__track {
@@ -1205,13 +1257,13 @@
 }
 
 .our-project-section__card {
-  flex: 0 0 calc((100% - 60px) / 2.8);
-  min-width: calc((100% - 50px) / 2.8);
+  flex: 0 0 calc((100% - 60px) / 2.65);
+  min-width: calc((100% - 50px) / 2.65);
   background: rgba(15, 23, 42, 0.9);
   border: 1px solid rgba(148, 163, 184, 0.12);
   border-radius: 24px;
-  padding: 38px;
-  min-height: 260px;
+  padding: 42px;
+  min-height: 280px;
 }
 
 @keyframes projectScroll {
