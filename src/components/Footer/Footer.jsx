@@ -1,23 +1,44 @@
 import './Footer.css'
+import BlobCursor from './BlobCursor'
 
 function Footer() {
   return (
     <footer className="animated-footer">
+      <BlobCursor
+        blobType="circle"
+        fillColor="#5227FF"
+        trailCount={3}
+        sizes={[60, 125, 75]}
+        innerSizes={[20, 35, 25]}
+        innerColor="rgba(255,255,255,0.8)"
+        opacities={[0.6, 0.6, 0.6]}
+        shadowColor="rgba(0,0,0,0.75)"
+        shadowBlur={5}
+        shadowOffsetX={10}
+        shadowOffsetY={10}
+        filterStdDeviation={30}
+        useFilter={true}
+        fastDuration={0.1}
+        slowDuration={0.5}
+        zIndex={1}
+      />
       <div className="footer__inner">
         <div className="footer__brand">
-          <div className="footer__logo">
-            <span className="footer__dot footer__dot--green" />
-            <span className="footer__dot footer__dot--blue" />
-            <span className="footer__dot footer__dot--red" />
+          <div className="footer__brand-header">
+            <div className="footer__logo">
+              <span className="footer__dot footer__dot--green" />
+              <span className="footer__dot footer__dot--blue" />
+              <span className="footer__dot footer__dot--red" />
+            </div>
+            <p className="footer__brand-text">
+              <span className="footer__brand-letter footer__brand-letter--blue">F</span>
+              U
+              <span className="footer__brand-letter footer__brand-letter--white">O</span>
+              <span className="footer__brand-letter footer__brand-letter--red">R</span>
+              AN
+            </p>
           </div>
-          <p className="footer__brand-text">
-            <span className="footer__brand-letter footer__brand-letter--blue">F</span>
-            U
-            <span className="footer__brand-letter footer__brand-letter--white">O</span>
-            <span className="footer__brand-letter footer__brand-letter--red">R</span>
-            AN
-          </p>
-          <p className="footer__brand-subtitle">Designing bold, colorful web experiences.</p>
+          <p className="footer__brand-subtitle">Empowering professionals and cooperates through next generation NFC and QR solutions.</p>
         </div>
 
         <div className="footer__content">

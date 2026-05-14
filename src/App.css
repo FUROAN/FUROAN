@@ -1379,6 +1379,7 @@
 
 .contact-section__info {
   text-align: left;
+  transform: translateX(-90px);
 }
 
 .contact-section__subtitle {
@@ -1500,6 +1501,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translateX(70px);
 }
 
 .contact-section__form-box {
