@@ -40,7 +40,7 @@ function Footer() {
               </p>
             </div>
           </div>
-          <p className="footer__brand-subtitle">Empowering professionals and cooperates through next generation NFC and QR solutions.</p>
+          <p className="footer__brand-subtitle">Creating impactful digital experiences through innovative technology.</p>
 
           <div className="footer__brand-social">
             <a href="#" aria-label="Facebook" className="footer__social-link">
