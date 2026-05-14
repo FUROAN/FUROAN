@@ -96,10 +96,13 @@
 }
 
 .contact-section.is-inview .contact-section__form-container {
-  animation: slideInRight50 0.8s ease-out 0.2s forwards;
-  opacity: 0;
+  opacity: 1;
 }
-
+.contact-section__form-container {
+  position: relative;
+  left: 130px;
+  transform: none;
+}
 .contact-section.is-inview .contact-section__info-box {
   animation: fadeInUp 0.6s ease-out forwards;
   opacity: 0;

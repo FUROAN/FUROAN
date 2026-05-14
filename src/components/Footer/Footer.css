@@ -75,6 +75,8 @@
 .footer__inner {
   width: min(1260px, 100%);
   margin: 0 auto;
+  padding-left: 100px;
+  box-sizing: border-box;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
