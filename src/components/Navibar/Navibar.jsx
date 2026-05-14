@@ -1,6 +1,6 @@
 import './Navibar.css'
 
-function Navibar() {
+function Navibar({ onOpenChat }) {
   return (
     <header className="navbar">
       <div className="navbar__inner">
@@ -66,7 +66,9 @@ function Navibar() {
           <a href="#our-project">Our Project</a>
           <a href="#about-us">About Us</a>
         </nav>
-        <a className="navbar__cta" href="#contact">Let&apos;s Talk</a>
+        <button className="navbar__cta" type="button" onClick={onOpenChat}>
+          Let&apos;s Talk
+        </button>
       </div>
     </header>
   )

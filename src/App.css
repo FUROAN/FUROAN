@@ -1373,13 +1373,13 @@
 .contact-section__main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 5rem;
   margin-bottom: 2rem;
 }
 
 .contact-section__info {
   text-align: left;
-  transform: translateX(-90px);
+  transform: translateX(-150px);
 }
 
 .contact-section__subtitle {
@@ -1501,7 +1501,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateX(70px);
+  transform: translateX(100px);
 }
 
 .contact-section__form-box {
@@ -1699,6 +1699,11 @@
   .contact-section__main {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .contact-section__info,
+  .contact-section__form-container {
+    transform: translateX(0);
   }
 
   .contact-section__title {

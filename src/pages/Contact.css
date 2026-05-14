@@ -22,6 +22,17 @@
   }
 }
 
+@keyframes slideInLeft50 {
+  from {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-100px);
+  }
+}
+
 @keyframes fadeInRight {
   from {
     opacity: 0;
@@ -30,6 +41,17 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight50 {
+  from {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(50px);
   }
 }
 
@@ -69,12 +91,12 @@
 }
 
 .contact-section.is-inview .contact-section__info {
-  animation: fadeInLeft 0.8s ease-out 0.2s forwards;
+  animation: slideInLeft50 0.8s ease-out 0.2s forwards;
   opacity: 0;
 }
 
 .contact-section.is-inview .contact-section__form-container {
-  animation: fadeInRight 0.8s ease-out 0.2s forwards;
+  animation: slideInRight50 0.8s ease-out 0.2s forwards;
   opacity: 0;
 }
 
