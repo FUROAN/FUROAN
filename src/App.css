@@ -1016,73 +1016,54 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.85);
-  max-width: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  max-width: 60%;
   height: auto;
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   opacity: 0;
-  transition: transform 2500ms cubic-bezier(0.16, 1, 0.3, 1), opacity 2200ms ease;
+  transition: transform 1200ms cubic-bezier(0.16, 1, 0.3, 1), opacity 1200ms ease;
   will-change: transform, opacity;
 }
 
 .about-us-section__image--left {
-  left: 30%;
-  transform: translate(-50%, -50%) scale(0.85);
-  max-width: 45%;
-  animation: imageCycleLeft 15s infinite;
-  animation-delay: 0.5s;
+  animation: imageCycleLeft 12s infinite;
+  animation-delay: 0s;
+  z-index: 2;
 }
 
 .about-us-section__image--right {
-  left: 70%;
-  transform: translate(-50%, -50%) scale(0.85);
-  max-width: 45%;
-  animation: imageCycleRight 15s infinite;
-  animation-delay: 0.5s;
+  animation: imageCycleRight 12s infinite;
+  animation-delay: 0s;
+  z-index: 1;
 }
 
 @keyframes imageCycleLeft {
   0%, 100% {
     opacity: 0;
-    transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.92);
   }
-  6.67% {
+  5%, 45% {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
   }
-  20% {
-    transform: translate(-50%, -60%) scale(1);
-  }
-  33.33% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  40% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.95);
-  }
-  73.33% {
+  50% {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.95);
   }
 }
 
 @keyframes imageCycleRight {
-  0%, 40%, 100% {
+  0%, 50%, 100% {
     opacity: 0;
-    transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.92);
   }
-  46.67% {
+  55%, 95% {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
   }
-  60% {
-    transform: translate(-50%, -60%) scale(1);
-  }
-  73.33% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+  100% {
+    opacity: 0;
   }
 }
 
