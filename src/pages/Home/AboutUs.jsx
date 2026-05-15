@@ -1,4 +1,6 @@
 import { useRef, useEffect, useState } from 'react'
+import leftImage from '../../assets/0ff68ac8-cc06-4ae1-bce5-7eb971fae470 (1).png'
+import rightImage from '../../assets/image.png'
 
 function AboutUs() {
   const sectionRef = useRef(null)
@@ -32,12 +34,12 @@ function AboutUs() {
         <div className="about-us-section__images-row">
           <img
             className="about-us-section__image about-us-section__image--left"
-            src="/src/assets/0ff68ac8-cc06-4ae1-bce5-7eb971fae470 (1).png"
+            src={leftImage}
             alt="About Us"
           />
           <img
             className="about-us-section__image about-us-section__image--right"
-            src="/src/assets/image.png"
+            src={rightImage}
             alt="About Us"
           />
         </div>

@@ -1027,14 +1027,17 @@
 }
 
 .about-us-section__image--left {
+  left: 30%;
   transform: translate(-50%, -50%) scale(0.85);
+  max-width: 45%;
   animation: imageCycleLeft 15s infinite;
   animation-delay: 0.5s;
 }
 
 .about-us-section__image--right {
+  left: 70%;
   transform: translate(-50%, -50%) scale(0.85);
-  max-width: 65%;
+  max-width: 45%;
   animation: imageCycleRight 15s infinite;
   animation-delay: 0.5s;
 }
