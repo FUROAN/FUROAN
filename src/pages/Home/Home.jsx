@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import createGlobe from 'cobe'
 import AboutUs from './AboutUs'
-import backgroundImage from '../../assets/1a3593f6-2f39-460f-942b-57553984fb19.png'
 
 function Home() {
   const canvasRef = useRef(null)
@@ -85,13 +84,6 @@ function Home() {
   return (
     <>
       <section id="home" className={`page-section home-section${isLoaded ? ' is-loaded' : ''}`}>
-      <div className="home-section__video-background">
-        <img
-          className="home-section__video"
-          src={backgroundImage}
-          alt="Background"
-        />
-      </div>
       <div className="home-section__hero">
         <div className="home-section__content home-section__copy">
          
