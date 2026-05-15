@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import createGlobe from 'cobe'
 import AboutUs from './AboutUs'
+import backgroundImage from '../../assets/1a3593f6-2f39-460f-942b-57553984fb19.png'
 
 function Home() {
   const canvasRef = useRef(null)
@@ -87,7 +88,7 @@ function Home() {
       <div className="home-section__video-background">
         <img
           className="home-section__video"
-          src="/src/assets/1a3593f6-2f39-460f-942b-57553984fb19.png"
+          src={backgroundImage}
           alt="Background"
         />
       </div>
