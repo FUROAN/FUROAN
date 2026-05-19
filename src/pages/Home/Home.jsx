@@ -243,6 +243,7 @@ function Home() {
         
       </div>
     </section>
+    
     <AboutUs />
     <section id="our-project" className="page-section our-project-section">
       <div className="our-project-section__content">
@@ -281,6 +282,42 @@ function Home() {
             <div className="our-project-section__card">
               <h3>AI & Business Systems</h3>
               <p>AI-enabled automation, inventory systems, POS, and smart analytics for growing businesses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="client-reviews" className="page-section client-reviews-section">
+      <div className="client-reviews-section__content">
+        <h2 className="client-reviews-section__title">Client Reviews</h2>
+       
+
+        <div className="client-reviews-section__grid">
+          <div className="client-reviews-section__card">
+            <p className="client-reviews-section__quote">
+              FUROAN transformed our e-commerce platform and made our checkout process feel effortless. The team delivered on time, and the results exceeded our expectations.
+            </p>
+            <div className="client-reviews-section__client">
+              <span className="client-reviews-section__card-name">Nadeesha Fernando</span>
+              <span className="client-reviews-section__card-role">CEO, RiverStream</span>
+            </div>
+          </div>
+          <div className="client-reviews-section__card">
+            <p className="client-reviews-section__quote">
+              The mobile app FUROAN built for us has boosted engagement and helped our customers stay connected. Their attention to detail is top notch.
+            </p>
+            <div className="client-reviews-section__client">
+              <span className="client-reviews-section__card-name">Chamila Perera</span>
+              <span className="client-reviews-section__card-role">Head of Product, Flow Services</span>
+            </div>
+          </div>
+          <div className="client-reviews-section__card">
+            <p className="client-reviews-section__quote">
+              Their team made our inventory and POS systems more reliable than ever. Communication was clear and the final product feels modern and polished.
+            </p>
+            <div className="client-reviews-section__client">
+              <span className="client-reviews-section__card-name">Dilani Jayawardena</span>
+              <span className="client-reviews-section__card-role">Operations Leader, BrightMart</span>
             </div>
           </div>
         </div>
