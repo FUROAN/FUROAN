@@ -290,7 +290,8 @@ function Home() {
     <section id="client-reviews" className="page-section client-reviews-section">
       <div className="client-reviews-section__content">
         <h2 className="client-reviews-section__title">Client Reviews</h2>
-       
+        <p className="client-reviews-section__subtitle">
+        </p>
 
         <div className="client-reviews-section__grid">
           <div className="client-reviews-section__card">

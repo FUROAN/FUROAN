@@ -412,7 +412,8 @@
   margin-top: -60px;
   transform: translateY(-50px);
   right: 50%;
-  width: 100vw;
+  width: 1920px;
+  height: 700px;
   margin-left: -50vw;
   margin-right: -50vw;
   display: flex;
@@ -440,20 +441,9 @@
 }
 
 .client-reviews-section__title {
-  margin-top: -100px;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 0.85rem;
+  transform: translateY(-80px);
 }
 
-.client-reviews-section__subtitle {
-  max-width: 760px;
-  margin: 0 auto 2.5rem;
-  color: #cbd5e1;
-  font-size: 1rem;
-  line-height: 1.8;
-}
 
 .client-reviews-section__grid {
   display: grid;
@@ -468,7 +458,7 @@
   position: relative;
   padding: 1.75rem;
   min-height: 210px;
-  border-radius: 22px;
+  border-radius: 32px;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.14);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22);
@@ -476,22 +466,21 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  animation: floatReview 6s ease-in-out infinite alternate;
 }
 
 .client-reviews-section__card:nth-child(1) {
-  margin-top: -38px;
-  animation-delay: 0.01s;
+  margin-top: 68px;
+  animation: floatUpReview 6s ease-in-out infinite alternate;
 }
 
 .client-reviews-section__card:nth-child(2) {
-  margin-top: 0;
-  animation-delay: 0.1s;
+  margin-top: 50;
+  animation: floatCenterReview 6s ease-in-out infinite alternate;
 }
 
 .client-reviews-section__card:nth-child(3) {
-  margin-top: 38px;
-  animation-delay: 0.1s;
+  margin-top: 80px;
+  animation: floatDownReview 6s ease-in-out infinite alternate;
 }
 
 .client-reviews-section__card::before {
@@ -528,6 +517,33 @@
 .client-reviews-section__card-role {
   font-size: 0.9rem;
   color: #93c5fd;
+}
+
+@keyframes floatUpReview {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes floatCenterReview {
+  from {
+    transform: translateY(-8px);
+  }
+  to {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes floatDownReview {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(20px);
+  }
 }
 
 @keyframes floatReview {
@@ -1499,7 +1515,7 @@
   max-width: none;
   background-color: #000000;
   background: linear-gradient(180deg, #000000 0%, #000000 100%);
-  transform: translateY(-35px);
+  transform: translateY(95px);
 }
 
 .contact-section::before {
